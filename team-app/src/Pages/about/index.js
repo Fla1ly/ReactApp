@@ -1,8 +1,11 @@
+/* about/index.js */
+
 import React from 'react';
 import '../../Assets/Styles/main.css';
 import Navbar from '../../Components/Navbar/Navbar';
 
 const About = () => {
+
   return (
     <div className='about-body'>
       <Navbar />
