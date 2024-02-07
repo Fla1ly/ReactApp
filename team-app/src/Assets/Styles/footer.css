@@ -1,0 +1,50 @@
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: auto;
+}
+
+footer i {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.644);
+    transition: all .4s ease-in-out;
+}
+
+footer i:hover {
+    color: #fff;
+}
+
+.footer-ulist {
+    display: flex;
+    list-style: none;
+}
+
+.footer-ulist a {
+    color: rgba(255, 255, 255, 0.644);
+    font-size: 13px;
+    margin-left: 35px;
+    transition: all .55s ease-in-out;
+}
+
+.footer-ulist a:hover {
+    color: #fff;
+}
+
+.footer-icons {
+    color: white;
+    margin-left: 1%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 5%;
+}
+
+.about-footer-background {
+    margin-top: auto;
+    background-color: #1f283b;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
