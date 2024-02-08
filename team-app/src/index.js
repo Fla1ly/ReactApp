@@ -6,11 +6,11 @@ import { Route, RouterProvider, Routes, createBrowserRouter, useParams } from 'r
 import './index.css';
 import App from './App';
 import About from './Pages/about';
-import { TeamMembersContext } from './TeamMembersContext';
+import MemberPage from './Pages/member';
 import reportWebVitals from './reportWebVitals';
 
 const teamMembers = [
-  { id: 1, name: 'Dawid Musial', profilePicture: require('./Assets/Images/team/dawid_pfp_updated.jpg'), bio: 'Dawid, our CEO, provides visionary leadership and strategic direction to our organization. With a background in software engineering, Dawid plays a key role in shaping the companys overall strategy and ensuring its success in a rapidly evolving industry. His passion for innovation and dedication to excellence inspire our team to reach new heights. Outside of the corporate realm, Dawid enjoys exploring cutting-edge technologies and contributing to the tech community.', email: 'dawid.musial@example.com', phone: '+1 (555) 123-4567', title: 'CEO', location: 'New York, USA' },
+  { id: 1, name: 'Dawid Musial', profilePicture: require('./Assets/Images/team/dawid_pfp.jpg'), bio: 'Dawid, our CEO, provides visionary leadership and strategic direction to our organization. With a background in software engineering, Dawid plays a key role in shaping the companys overall strategy and ensuring its success in a rapidly evolving industry. His passion for innovation and dedication to excellence inspire our team to reach new heights. Outside of the corporate realm, Dawid enjoys exploring cutting-edge technologies and contributing to the tech community.', email: 'dawid.musial@example.com', phone: '+1 (555) 123-4567', title: 'CEO', location: 'New York, USA' },
   { id: 2, name: 'Ahmet Gomez', profilePicture: require('./Assets/Images/team/Ahmet.png'), bio: 'Ahmet, our customer support specialist, is dedicated to ensuring a positive experience for our users. With excellent communication skills, Ahmet handles inquiries with efficiency and empathy.', email: 'ahmet.gomez@example.com', phone: '+1 (555) 678-3456', title: 'Customer Support Specialist', location: 'Istanbul, Turkey' },
   { id: 3, name: 'Krystian Evans', profilePicture: require('./Assets/Images/team/Krystian.png'), bio: 'Krystian, our data scientist, has a passion for uncovering meaningful insights from complex datasets. His analytical skills contribute to data-driven decision-making within our team.', email: 'krystian.evans@example.com', phone: '+1 (555) 765-4321', title: 'Data Scientist', location: 'Tokyo, Japan' },
   { id: 5, name: 'Marius Foster', profilePicture: require('./Assets/Images/team/Marius.png'), bio: 'Marius is our DevOps engineer, streamlining development processes with automation and continuous integration. His expertise ensures efficient and reliable software delivery.', email: 'marius.foster@example.com', phone: '+1 (555) 543-8765', title: 'DevOps Engineer', location: 'Toronto, Canada' },
@@ -46,9 +46,7 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <TeamMembersContext.Provider value={teamMembers}>
-      <RouterProvider router={router} />
-    </TeamMembersContext.Provider>
+    <App />
   </React.StrictMode>
 );
 
