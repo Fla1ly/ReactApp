@@ -3,6 +3,7 @@
 import React from 'react';
 import '../../Assets/Styles/main.css';
 import Navbar from '../../Components/Navbar/Navbar';
+import Team from '../../Components/Team/TeamMembers';
 
 const About = () => {
 
@@ -34,6 +35,13 @@ const About = () => {
             <a href="https://www.instagram.com/visiple_/"><i class="ri-instagram-line"></i></a>
             <a href="https://www.linkedin.com/company/visiple"><i class="ri-linkedin-fill"></i></a>
           </div>
+        </div>
+        <div className="team-wrapper">
+          <div className="team-header" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Meet the Team</h1>
+            <div className="divider-black"></div>
+          </div>
+          <Team />
         </div>
       </div>
     </div>
