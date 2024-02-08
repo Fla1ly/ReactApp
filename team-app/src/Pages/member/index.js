@@ -1,23 +1,17 @@
-import React from 'react';
 import { useParams } from 'react-router-dom';
-import { teamMembers } from '../../Components/Team/TeamMembers';
 
-const UserPage = () => {
+function MemberPage({ teamMembers }) {
   const { id } = useParams();
+  const member = teamMembers.find(m => m.id === Number(id));
 
-  const user = teamMembers.find((member) => member.id === parseInt(id));
-
-  return (
+  return member ? (
     <div>
-      <h2>{user.name}</h2>
-      <img src={user.profilePicture} alt={user.name} />
-      <p>Bio: {user.bio}</p>
-      <p>Email: {user.email}</p>
-      <p>Phone: {user.phone}</p>
-      <p>Title: {user.title}</p>
-      <p>Location: {user.location}</p>
+      <h1>{member.name}</h1>
+      <img src={member.profilePicture} alt={member.name} />
+      <p>{member.title}</p>
+      {/* other member details */}
     </div>
+  ) : (
+    <div>Member not found</div>
   );
-};
-
-export default UserPage;
+}
