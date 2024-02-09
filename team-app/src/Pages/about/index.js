@@ -3,7 +3,7 @@
 import React from 'react';
 import '../../Assets/Styles/main.css';
 import Navbar from '../../Components/Navbar/Navbar';
-import Team from '../../Components/Team/TeamMembers';
+import Team from '../../Components/Team/teamloop';
 
 const About = () => {
 
