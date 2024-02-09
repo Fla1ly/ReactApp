@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../Images/member-individ-background.jpg);
+}
+
+.member-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+}
+
+.member-wrapper {
+    display: flex;
+    width: 90%;
+    height: 600px;
+    align-items: center;
+    text-align: center;
+    margin-top: 5%;
+    backdrop-filter: blur(5px);
+}
+
+.member-wrapper h1, p {
+    color: #fff;
+}
+
+.member-wrapper h1 {
+    font-size: 1.85rem;
+    font-weight: 600;
+}
+
+.member-wrapper h2 {
+    color: #ffeb56;
+    font-size: 15px;
+    margin-top: 0px;
+}
+
+.member-wrapper h3 {
+    color: #fff;
+    font-size: 1.15rem;
+    font-weight: 400;
+    line-height: 1.45rem;
+    margin-top: 10px;
+}
+
+.member-contact-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    line-height: 2rem;
+}
+
+.member-icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.member-icon-wrapper ion-icon {
+    color: #fff;
+    margin-right: 5px;
+}
+
+.member-contact-info p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+
+.member-wrapper img {
+    width: 50%;
+    border-radius: 10px;
+}
