@@ -19,7 +19,7 @@ function App() {
               </div>
               <div className="index-buttons-parent">
                 <a href="signup.html" className="btn btn-primary btn-lg btn-media">Sign up</a>
-                <a href="about.html" className="btn btn-primary btn-lg btn-media">Learn More <i className="ri-arrow-drop-right-line"></i></a>
+                <a href="/about" className="btn btn-primary btn-lg btn-media">Learn More <i className="ri-arrow-drop-right-line"></i></a>
               </div>
             </div>
           </div>

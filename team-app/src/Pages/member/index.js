@@ -22,7 +22,7 @@ function MemberPage() {
           <div className='member-left-container'>
             <img src={member.profilePicture} alt={member.name} />
           </div>
-          <div className='member-right-container'>
+          <div data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="true" className='member-right-container'>
             <h1>{member.name}</h1>
             <h2>{member.title}</h2>
             <div className='divider'></div>
